@@ -1,0 +1,25 @@
+
+<div>
+<input type="button" value="add" id="addContact"/>
+<div class="dsn">
+	number: <input type="text" id="addNumber"/>
+	name : <input type="text" id="addName"/>
+	<input type ="button" value="ok" id="addConfirmed"/>
+</div>
+</div>
+<%
+ for(var p in items){%>
+ 	<div>
+ 		<div class="text">
+ 			number:<%=items[p].attributes.number %> name : <%=items[p].attributes.name %>
+ 			<input class="js-edit"type = "button" value="edit"> <input type = "button" value="delete" class="js-delete" id=<%=items[p].attributes.id %> />
+ 		</div>
+ 		<div class="dsn form">
+			number: <input type="text" name="number" value=<%=items[p].attributes.number%> />
+ 			number: <input type="text" name="name" value=<%=items[p].attributes.name%> />
+ 			<input class="js-ok" type = "button" value="ok" id=<%=items[p].attributes.id %> />
+ 		</div>
+ 				
+ 	</div>
+ <%}
+%>

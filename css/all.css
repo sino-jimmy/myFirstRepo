@@ -1,0 +1,26 @@
+.barview-bar {
+	width:100%;
+	height: 44px;
+	border:1px solid blue;
+}
+.barview-bar a {
+	border:1px solid red;
+	display:inline-block;
+	text-decoration:none;
+	text-align: center;
+	line-height: 44px;
+	font-size: 10px;
+}
+.barview-bar a{
+	border-right: 1px solid blue;
+}
+
+.dsn{
+	display: none;
+}
+.barview-bar{
+	display:flex;	
+}
+.barview-bar a{
+	flex:1;
+}
